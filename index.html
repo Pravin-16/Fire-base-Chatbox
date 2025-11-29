@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Welcome to Firebase Chat</h2>
+
+  <!-- Login/Register Section -->
+  <div id="auth-section">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="registerBtn">Register</button>
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <!-- Chat Section -->
+  <div id="chat-section" style="display:none;">
+    <div id="messages"></div>
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <button id="sendBtn">Send</button>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <!-- Firebase SDKs + App Script -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
